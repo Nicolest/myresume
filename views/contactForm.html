@@ -1,0 +1,41 @@
+<div class="contact">
+	<div class="alert alert-error" ng-show="!emailSent">
+		<button type="button" class="close" data-dismiss="alert">×</button>
+		<span ng-bind="contact.form.error"></span>
+	</div>
+	<form class="form-horizontal" ng-submit="submitContactForm()">
+		<div class="control-group">
+			<label class="control-label" for="inputName" ng-bind="contact.form.name"></label>
+			<div class="controls">
+				<input class="input-xlarge" type="text" placeholder="{{contact.form.name}}" ng-model="mail.name" required>
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="inputEmail" ng-bind="contact.form.email"></label>
+			<div class="controls">
+				<input class="input-xlarge" type="email" placeholder="{{contact.form.email}}" ng-model="mail.email" required>
+			</div>
+		</div>
+		<div class="control-group">
+			<label class="control-label" for="inputMessage" ng-bind="contact.form.message"></label>
+			<div class="controls">
+				<textarea class="span9" rows="8" placeholder="{{contact.form.message}}" ng-model="mail.message" required></textarea>
+			</div>
+		</div>	
+		<div class="control-group">
+			<div class="controls">
+				<button type="submit" class="btn btn-large btn-primary" ng-bind="contact.form.send"></button>
+			</div>
+		</div>
+		<br>
+		<div class="control-group">
+			<div class="controls">
+				<address>
+					<strong ng-bind="profile.name"></strong><br>
+					<span ng-bind="contact.address.city"></span>, <span ng-bind="contact.address.zipCode"></span><br>
+					<span ng-bind="contact.address.email"></span>
+				</address>
+			</div>
+		</div>
+	</form>
+</div>

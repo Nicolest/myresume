@@ -1,0 +1,11 @@
+# DEVELOPER
+
+    Developer: Nicolas Huguet
+	Contact: nicolas.huguet34@gmail.com
+	Twitter: @nicolashuguet
+	From: Paris, France
+
+# TECHNOLOGIES
+
+    Technologies: HTML5, CSS3, Bootstrap, HTML5boilerplate, jQuery, Modernizr, AngularJS, AscensorJS, TimelineJS
+	Doctype: HTML5
